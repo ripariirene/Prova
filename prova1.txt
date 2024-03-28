@@ -1,1 +1,13 @@
-Ciaoooo
+Perchè serve la staging area? Perchè se voglio muovermi tra un branch e l'altro e ho delle modifiche
+sul branch attuale, se faccio add, cambio branch e poi ritorno, ho salvato le mie modifiche senza doverle 
+committare e "sporcare" la storia dei commit. Per cambiare branch git ti fa per froza o rimuovere le modifiche 
+non messe nella staging area o ti fa fare add, così le recuperi quando torni sul tuo branch. 
+
+git branch -M --> rinomina il branch in cui sei (ad esempio per mettere un branch come master per poi
+metterlo in remoto lo rinomini come master o main com "git branch -M main").
+
+Il repository remoto di convenzione si chiama origin.
+
+git push -u <nome repository remoto><nome repsitory locale> --> va fatto una volta sola, imposta il repository 
+remoto che gli specifichi e il repository locale come upstream, quindi il repository e il ramo predefiniti 
+ai quali il mio repositoy locale è configuato per inviare i push, i commit, ricevere pull ecc. 
